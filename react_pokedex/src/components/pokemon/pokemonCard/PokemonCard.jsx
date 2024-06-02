@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { fetchPokemon } from "../pokemonSlice";
 import classes from './PokemonCard.module.css'
 import { useEffect, useState } from "react";
@@ -19,7 +20,7 @@ const PokemonCard = (props) => {
         };
 
         fetchData();
-    }, []);
+    }, [dispatch, props.index]);
 
     return (
         <>

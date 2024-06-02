@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useDispatch } from 'react-redux'
 import classes from "./PokemonDisplay.module.css"
 import { addPokedex, fetchPokemon } from '../pokemonSlice'
